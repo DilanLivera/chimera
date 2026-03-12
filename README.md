@@ -11,11 +11,8 @@ Sets up a Catppuccin Mocha themed iTerm2 environment.
 **What it installs:**
 
 - JetBrainsMono Nerd Font
+- Oh My Posh
 - Catppuccin Mocha color scheme for iTerm2
-- Oh My Zsh
-- Powerlevel10k theme
-- zsh-autosuggestions
-- zsh-syntax-highlighting
 
 **Usage:**
 
