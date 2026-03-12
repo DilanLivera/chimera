@@ -33,22 +33,22 @@ else
   brew install jandedobbeleer/oh-my-posh/oh-my-posh
 fi
 
-# ── Catppuccin Mocha color scheme ───────────────────────────────────────────
-COLORS_FILE="$HOME/Downloads/Catppuccin Mocha.itermcolors"
+# ── Catppuccin Mocha theme ──────────────────────────────────────────────────
+THEME_FILE="$HOME/Downloads/catppuccin-mocha.terminal"
 
-log "Downloading Catppuccin Mocha color scheme..."
+log "Downloading Catppuccin Mocha theme..."
 curl -fsSL \
-  "https://raw.githubusercontent.com/catppuccin/iterm/main/colors/Catppuccin%20Mocha.itermcolors" \
-  -o "$COLORS_FILE"
+  "https://raw.githubusercontent.com/catppuccin/Terminal.app/main/themes/catppuccin-mocha.terminal" \
+  -o "$THEME_FILE"
 
-log "Importing color scheme into iTerm2..."
-open "$COLORS_FILE"
+log "Importing theme into Terminal.app..."
+open "$THEME_FILE"
 
 # ── Done ─────────────────────────────────────────────────────────────────────
 echo ""
-log "Setup complete! Two manual steps remaining in iTerm2:"
+log "Setup complete! Manual steps remaining in Terminal.app:"
 echo ""
-echo "  1. Colors  → Profiles → Colors → Color Presets → Catppuccin Mocha"
-echo "  2. Font    → Profiles → Text   → Font → JetBrainsMono Nerd Font"
+echo "  1. Settings → Profiles → catppuccin-mocha → Default"
+echo "  2. Settings → Profiles → catppuccin-mocha → Font → JetBrainsMono Nerd Font"
 echo ""
 warn "Restart your terminal (or run 'exec zsh') to apply the shell changes."

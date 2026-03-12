@@ -4,24 +4,24 @@ A collection of Mac setup and tooling scripts.
 
 ## Scripts
 
-### `setup-terminal.sh` — iTerm2 Catppuccin Mocha
+### `setup_apple_terminal.sh` — Terminal.app Catppuccin Mocha
 
-Sets up a Catppuccin Mocha themed iTerm2 environment.
+Sets up a Catppuccin Mocha themed terminal environment.
 
 **What it installs:**
 
 - JetBrainsMono Nerd Font
 - Oh My Posh
-- Catppuccin Mocha color scheme for iTerm2
+- Catppuccin Mocha theme for Terminal.app
 
 **Usage:**
 
 ```bash
-chmod +x setup-terminal.sh
-./setup-terminal.sh
+chmod +x setup_apple_terminal.sh
+./setup_apple_terminal.sh
 ```
 
 **Manual steps after running:**
 
-1. iTerm2 → Profiles → Colors → Color Presets → Catppuccin Mocha
-2. iTerm2 → Profiles → Text → Font → JetBrainsMono Nerd Font
+1. Terminal.app → Settings → Profiles → catppuccin-mocha → Default
+2. Terminal.app → Settings → Profiles → catppuccin-mocha → Font → JetBrainsMono Nerd Font
