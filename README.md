@@ -4,7 +4,7 @@ A collection of Mac setup and tooling scripts.
 
 ## Scripts
 
-### `setup.sh` — iTerm2 Catppuccin Mocha
+### `setup-terminal.sh` — iTerm2 Catppuccin Mocha
 
 Sets up a Catppuccin Mocha themed iTerm2 environment.
 
@@ -20,8 +20,8 @@ Sets up a Catppuccin Mocha themed iTerm2 environment.
 **Usage:**
 
 ```bash
-chmod +x setup.sh
-./setup.sh
+chmod +x setup-terminal.sh
+./setup-terminal.sh
 ```
 
 **Manual steps after running:**
