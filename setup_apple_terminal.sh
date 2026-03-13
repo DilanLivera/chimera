@@ -43,12 +43,24 @@ curl -fsSL \
 
 log "Importing theme into Terminal.app..."
 open "$THEME_FILE"
+sleep 2
+
+FONT_NAME="JetBrainsMonoNFM-Regular"
+FONT_SIZE=14
+PROFILE_NAME="catppuccin-mocha"
+
+log "Setting font to JetBrainsMono Nerd Font Mono (${FONT_SIZE}pt)..."
+osascript -e "
+  tell application \"Terminal\"
+    set font name of settings set \"${PROFILE_NAME}\" to \"${FONT_NAME}\"
+    set font size of settings set \"${PROFILE_NAME}\" to ${FONT_SIZE}
+  end tell
+"
 
 # ── Done ─────────────────────────────────────────────────────────────────────
 echo ""
-log "Setup complete! Manual steps remaining in Terminal.app:"
+log "Setup complete! Manual step remaining in Terminal.app:"
 echo ""
 echo "  1. Settings → Profiles → catppuccin-mocha → Default"
-echo "  2. Settings → Profiles → catppuccin-mocha → Font → JetBrainsMono Nerd Font"
 echo ""
 warn "Restart your terminal (or run 'exec zsh') to apply the shell changes."
